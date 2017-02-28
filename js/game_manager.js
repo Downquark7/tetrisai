@@ -8,7 +8,7 @@ function GameManager(){
     var nextContext = nextCanvas.getContext('2d');
     document.addEventListener('keydown', onKeyDown);
 
-    var grid = new Grid(35, 7);
+    var grid = new Grid(7, 35);
     var rpg = new RandomPieceGenerator();
     var ai = new AI(0.510066, 0.760666, 0.35663, 0.184483);
     var workingPieces = [rpg.nextPiece(), rpg.nextPiece()];
